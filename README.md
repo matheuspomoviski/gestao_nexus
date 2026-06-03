@@ -6,3 +6,12 @@ Minha ideia é criar um software para gestão de estoque, onde independente do t
 Dentro do curso é obrigatoriamente usar MySQL e Java como linguagem de programação. A intenção é que eu consiga usar essa base para que eu possa usar Java para estruturar uma API e que ela sirva para alimentar o front-end em uma aplicação web
 
 > No momento em que esse read.me está publicado ainda estou no processo de aprender a linguagem Java. O que está definido agora são as entidades e relacionamentos no banco de dados relacional, mas ainda não há nada publicado ou disposto em algum lugar para testes 
+
+## Entidades
+- usuario
+    > entidade para registrar tanto o superusuario como os gestores quando a empresa necessitar ter setores separados para cada tipo de insumo
+  -  campos principais: `id`, `tipo_aceso`, `ativo`;
+  - relacionamentos:
+    - `movimentacao` (1:N);
+    - `setor` (1:N);
+    - `produtos` (1:N).
